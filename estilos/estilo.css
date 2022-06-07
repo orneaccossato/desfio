@@ -93,7 +93,7 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     margin: 15px;
- }
+   }
 
  .cupon{
    display: flex; 
@@ -101,8 +101,9 @@ a{
    margin: 10px;
    padding-top: 200px;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
- }
+
 
  /*banner envios*/
 
@@ -138,7 +139,17 @@ a{
    justify-content: space-between;
    justify-content: center;
 align-items: center;
+transition: all 3s;
 }
+.animacionImagen{
+   transition: all 3s;
+}
+
+.animacionImagen:hover{
+   transform: scale(2,2);
+}
+
+
 
 button :hover{
 background-color: blue;
