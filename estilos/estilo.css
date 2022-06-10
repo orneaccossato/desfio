@@ -12,6 +12,7 @@
     
  
  }
+
  
  span:hover{
     color: white;
@@ -28,7 +29,7 @@ a{
    text-decoration: none;
 }
  a:hover{
-   color: white; 
+   color: black; 
 }
  li{
     margin: 50px;
@@ -71,7 +72,7 @@ a{
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   margin-top: 35px;
+   margin-top: 10px;
    margin-left: 10px;
    margin-right: 10px;
 
@@ -83,12 +84,12 @@ a{
  }
  
  /* banner descuentos */
- .sectionIndex{
+/* .sectionIndex{
     background-image: url(../imagenes/banner1.jpg) ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
- }
+ }*/
  .tituloDescuento{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
@@ -103,7 +104,9 @@ a{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-
+.color{
+   background-color: #7f5539;
+}
 
  /*banner envios*/
 
