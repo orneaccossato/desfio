@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+ }
+ 
+
+ 
+ #grilla{
+    width: 100%;
+    height: 100vh;
+    
+ 
+ }
+
+ header{
+    grid-area: header;
+    background-color: #9c6644;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    .logoHeader img{
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: flex-end;
+     
+      }
+    }
+
+
+    footer {
+        grid-area: footer;
+        background-color: #b08968;
+        .iconosFooter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+         
+         
+          }
+          .textoFooter{
+            margin: 10px;
+         }
+         
+     }
+  
+     .color{
+      background-color: $color;
+   }
+   
+

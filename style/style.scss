@@ -1,0 +1,123 @@
+@import "index";
+@import "nav";
+@import "productos";
+@import "variables";
+@import "general";
+
+
+
+
+ /*grid*/
+ section#oferta {
+    grid-area: oferta;     
+ }
+ section#servicios {
+    grid-area: servicios;    
+    background-color: #ddb892; 
+ }
+ aside {
+    grid-area: publicidad;
+    background-color: #7f5539;
+ }
+ 
+ #grilla {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "oferta"
+    "servicios"
+    "publicidad"
+    "footer"
+    ;
+  
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 2fr 1fr 100px;
+    gap: 5px;
+    
+  
+   }
+ 
+ 
+ 
+ .menuFlex{
+    display: flex; 
+    flex-direction: column;
+    }
+    
+    .productosFlex{
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+        text-align: center;
+    }
+ 
+ 
+ 
+ @media(min-width:768px){
+ 
+    #grilla {
+       display: grid;
+       grid-template-areas: 
+       "header header"
+       "nav    nav"
+       "oferta  publicidad"
+       "servicios publicidad "
+       "footer    footer"
+       ;
+     
+       grid-template-columns:25% auto ;
+       grid-template-rows: 100px 2fr 1fr 100px;
+       gap: 5px;
+     
+      }
+      .menuFlex{
+       display: flex; 
+       flex-direction: row;
+       justify-content: space-evenly;
+       }
+ 
+       .productosFlex{
+          display: flex;
+          flex-direction: row;
+          background-color: pink;
+      }
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ /*desktop*/
+ @media (min-width:1024px){
+ 
+    #grilla {
+     display: grid;
+     grid-template-areas: 
+     "nav header    header"
+     "nav oferta publicidad"
+     "nav servicios publicidad"
+     "nav footer    footer";
+   
+     grid-template-columns: 20% auto 15%;
+     grid-template-rows: 100px 2fr 1fr 100px;
+     gap: 10px;
+   
+    }
+   
+    .menuFlex{
+       display: flex; 
+       flex-direction: column;
+       }
+       
+       .productosFlex{
+           display: flex;
+           flex-direction: row;
+           background-color: pink;
+       }
+    
+    /*estilos Flex*/
+   
+ }
+ 

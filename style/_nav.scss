@@ -1,0 +1,20 @@
+nav{
+    grid-area: nav;
+    background-color: $color;
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+     
+        li{
+            margin: 50px;
+            list-style: none;
+            a{
+                text-decoration: none;
+
+            }
+         }
+       }
+    } 

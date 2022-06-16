@@ -1,0 +1,36 @@
+
+.sectionProductos{
+    display:inline-flex;
+    padding: 20px;
+    .imagenProducto img{
+        height: 250px;
+        width: 250px;
+        display: inline-flex;
+        justify-content: space-between;
+        justify-content: center;
+     align-items: center;
+     transition: all 3s;
+     
+     .animacionImagen{
+        transition: all 3s;
+      
+        .animacionImagen:hover{
+            transform: scale(2,2);
+         } 
+      }
+      .button{
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        margin-top: 25px;
+     border-radius: 15px;
+         .button:hover{
+             background-color: black;
+             color: white;
+         }
+     }
+     
+    }
+
+}
+ 
