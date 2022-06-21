@@ -16,19 +16,19 @@
       
         .animacionImagen:hover{
             transform: scale(2,2);
-         } 
-      }
-      .button{
+                              } 
+                     }
+      .button   {
         background-color: transparent;
-        color: black;
+        color:$color;
         cursor: pointer;
         margin-top: 25px;
-     border-radius: 15px;
-         .button:hover{
-             background-color: black;
+        border-radius: 15px;
+         &:hover{
+             background-color: $color;
              color: white;
-         }
-     }
+                      }
+                }
      
     }
 
