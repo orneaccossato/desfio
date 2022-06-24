@@ -1,2 +1,13 @@
 $color: #7f5539;
 $tipografia: font-family Verdana, Geneva, Tahoma, sans-serif;
+
+.foto{
+    border: 5px solid black;
+}
+
+@mixin sizes ($width , $height){
+    height: $height;
+    width: $width
+    
+ }
+ 

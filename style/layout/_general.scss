@@ -2,9 +2,7 @@
  
  #grilla{
     width: 100%;
-    height: 100vh;
-    
- 
+    height: 100vh;    
  }
 
  header{
@@ -16,8 +14,7 @@
     justify-content: space-between;
     padding: 15px;
     .logoHeader img{
-        height: 100px;
-        width: 100px;
+        @include sizes(100px,100px );
         display: flex;
         justify-content: flex-end;
      
@@ -47,6 +44,19 @@
   
      .color{
       background-color: $color;
+      }
+
+      $redes: ( 
+       twitter: #55aCee, 
+       facebook:#3a5795,
+       instagram:#C25E30,)
+       ;
+@each $red, $colores in $redes {
+    .btn--#{$red}{
+        background-color: $colores;
+    }
+
+
    }
    
 
